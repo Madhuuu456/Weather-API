@@ -1,0 +1,165 @@
+body{
+    background: url('2148933766.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    color:hsl(0, 0%, 0%);
+}
+.searchBar{
+    height: 10vh;
+    background: rgb(19, 19, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputfield{
+    outline: none;
+    box-shadow: none;
+}
+.searchBarParentDiv{
+    width: 50%;
+    height: fit-content;
+    position: relative;  
+}
+.inputfield{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    border: none;
+}
+.searchIcon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+.mainContentParentDiv{
+    height: 90vh;
+    flex-direction: row;
+}
+.leftDiv{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.leftChild{
+    background: rgba(212, 212, 212, 0.4);
+    width: 85%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+}
+.currentTempDiv{
+    font-size: larger;
+}
+#cityName{
+    font-size: xx-large;
+}
+#cityTemp{
+    font-size: x-large;
+}
+#comingFive{
+    font-size: x-large;
+}
+.rightDiv{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.rightRow{
+    height: 27vh;
+    width: 100%;
+
+}
+.extraMetric{
+    background: rgba(212,212,212,0.4);
+    padding:  5% 2%;
+    width: fit-content;
+    border-radius: 10px;
+    align-items: center;
+}
+.rowTwoDiv{
+    background: rgba(212, 212, 212, 0.4);
+    backdrop-filter: blur(15px);
+    width: 45%;
+    height: 85%;
+    border-radius: 15px;
+}
+.todayTemp{
+    background: rgba(212, 212, 212, 0.4);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+@media only screen and (max-width:767px){
+    .leftDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    }
+    .rightDiv{
+        width: 100%;
+    }
+    .mainContentParentDiv{
+    height: 90vh;
+    flex-direction: column;
+    }
+    .searchBar{
+      width: 100%;
+    }
+    .searchBarParentDiv{
+    width: 85%;
+    height: fit-content;
+    position: relative; 
+    }
+    .rowOne {
+        flex-wrap: wrap;
+        width: 85%;
+        margin: auto;
+        backdrop-filter: blur(15px);
+    }
+    .rowTwo{
+        flex-direction: column;
+        gap: 10px;
+        height: 30vh;
+        backdrop-filter: blur(15px);
+    }
+    .rowTwoDiv{
+    background: rgba(212, 212, 212, 0.4);
+    backdrop-filter: blur(15px);
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    }
+    .rowThree{
+        width: 85%;
+        margin: auto;
+        backdrop-filter: blur(15px);
+    }
+    .todayTempParentDiv{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 15px;
+        backdrop-filter: blur(15px);
+    }
+    
+}
